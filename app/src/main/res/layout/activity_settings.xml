@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Switch pour basculer entre le mode sombre et clair -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:text="Settings"
+        android:textStyle="bold"
+        android:textSize="50dp" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        android:layout_margin="8dp"
+        android:textSize="24dp"
+        />
+
+    <TextView
+        android:id="@+id/manage_categories_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier les categories"
+        android:textSize="24dp"
+        android:layout_margin="8dp"
+        tools:ignore="MissingConstraints"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<!-- res/values/colors.xml -->
+<resources>
+    <color name="primary_color">#6200EE</color> <!-- Couleur principale (violet) -->
+    <color name="light_gray">#F5F5F5</color> <!-- Arrière-plan clair -->
+    <color name="gray">#9E9E9E</color> <!-- Gris pour les bordures -->
+    <color name="darker_gray">#757575</color> <!-- Gris plus foncé pour les hints -->
+    <color name="white">#FFFFFF</color> <!-- Blanc -->
+    <color name="black">#000000</color> <!-- Noir -->
+
+
+</resources>

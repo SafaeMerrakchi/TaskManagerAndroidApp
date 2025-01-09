@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Diagramme global -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall Task Statistics"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        <com.androidplot.pie.PieChart
+            android:id="@+id/pieChartOverall"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="10dp" />
+
+        <!-- Légende pour le diagramme global -->
+        <LinearLayout
+            android:id="@+id/legendOverall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+        </LinearLayout>
+
+        <!-- Diagramme par catégorie -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incomplete Tasks by Category"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="110dp"
+            android:padding="10dp" />
+
+        <com.androidplot.pie.PieChart
+            android:id="@+id/pieChartByCategory"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="10dp" />
+
+        <!-- Légende pour le diagramme par catégorie -->
+        <LinearLayout
+            android:id="@+id/legendCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

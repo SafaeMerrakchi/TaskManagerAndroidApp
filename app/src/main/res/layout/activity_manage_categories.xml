@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginStart="20dp">
+
+    <EditText
+        android:id="@+id/edit_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter category name" />
+
+    <Button
+        android:id="@+id/button_add_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Category" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Text at the bottom in italic -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hint: Click on a category to delete it"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:textStyle="italic"
+        android:textColor="@android:color/darker_gray"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        />
+</LinearLayout>
